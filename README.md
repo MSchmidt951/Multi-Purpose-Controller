@@ -48,6 +48,8 @@ Attach the electronics to the print with screws
 
 ### Uploading the code
 
-Install the [RF24](https://github.com/nRF24/RF24) and [FastLED](https://github.com/FastLED/FastLED) libraries and [MightyCode](https://github.com/MCUdude/MightyCore) on the arduino IDE
+Install the [RF24](https://github.com/nRF24/RF24) and [FastLED](https://github.com/FastLED/FastLED) libraries and [MightyCore](https://github.com/MCUdude/MightyCore) on the arduino IDE
+
+Load the [code](https://github.com/MSchmidt951/Multi-Purpose-Controller/blob/main/controller/controller.ino) into the arduino IDE then under Tools > Board > MightyCore select ATmega644
 
 Make sure the standard pinout and internal clock is selected in the settings then upload the code to the ATmega644
