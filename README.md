@@ -2,6 +2,7 @@
 
 This is a wireless controller that can be used with multiple devices and projects.  
 It uses an ATmega644 to control the circuit and an nRF24LO1 for communication.  
+More information on [my portfolio](https://mschmidt951.github.io/portfolio/projects/controller.html)
 
 ## Features
 
