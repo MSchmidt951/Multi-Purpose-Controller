@@ -141,7 +141,7 @@ void loop(){
     bitWrite(miscByte, 2, !digitalRead(lightBtn));
   }
   for (int i=1; i<3; i++){
-    bitWrite(miscByte, i+3, !digitalRead(switches[3]));
+    bitWrite(miscByte, i+3, !digitalRead(switches[i]));
   }
   bitWrite(miscByte, 6, !digitalRead(StickL[2]));
   bitWrite(miscByte, 7, !digitalRead(StickR[2]));
