@@ -54,3 +54,7 @@ Install the [RF24](https://github.com/nRF24/RF24) and [FastLED](https://github.c
 Load the [code](https://github.com/MSchmidt951/Multi-Purpose-Controller/blob/main/controller/controller.ino) into the arduino IDE then under Tools > Board > MightyCore select ATmega644
 
 Make sure the standard pinout and internal clock is selected in the settings then upload the code to the ATmega644
+
+## Example Receiver
+
+[receiverExample.ino](https://github.com/MSchmidt951/Multi-Purpose-Controller/blob/main/receiverExample/receiverExample.ino) shows an example of each of the inputs of the controller being used to control another microcontroller using radio
