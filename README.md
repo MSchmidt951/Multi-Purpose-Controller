@@ -22,9 +22,9 @@ An RGB LED (PL9823) giving the status of the controller
 
 ## Usage
 
-1. Turn the power switch on and wait for the green light
+1. Turn the power switch on and wait for the orange light
 2. Turn on the device that is being used
-3. Press some buttons!
+3. When the light turns green press some buttons!
 
 LED colour | Meaning
 ---------- | ------------------------
