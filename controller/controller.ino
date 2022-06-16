@@ -65,6 +65,8 @@ void setup(){
     pinMode(StickL[i], INPUT);
     pinMode(StickR[i], INPUT);
   }
+  pinMode(StickL[2], INPUT_PULLUP);
+  pinMode(StickR[2], INPUT_PULLUP);
 
   //Set up LED
   delay(2000);
@@ -87,12 +89,19 @@ void setup(){
   setLED(80, 18, 2);
   bool Ready = false;
   while (!Ready){
+    //Check radio for other device
     if (radio.available()) {
       while (radio.available()) {
         radio.read(&miscByte, sizeof(byte));
       }
       Ready = miscByte > 0;
     }
+
+    //If both the left and right joysticks are pressed continue with main loop
+    if (!digitalRead(StickL[2]) and !digitalRead(StickR[2])) {
+      Ready = true;
+    }
+
     delay(2);
   }
   radio.stopListening();
