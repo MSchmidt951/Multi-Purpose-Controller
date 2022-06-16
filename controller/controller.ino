@@ -100,17 +100,15 @@ void setup(){
 }
 
 void loop(){
-  //Set the LED
-  if (!aborted) {
-    if (!digitalRead(Standby)){
-      setLED(0, 0, LEDbrightness);
-      aborted = false;
-    } else if (!digitalRead(ABORT)) {
-      setLED(LEDbrightness, 0, 0);
-      aborted = true;
-    } else {
-      setLED(0, LEDbrightness, 0);
-    }
+  //Set the LED colours
+  if (!digitalRead(Standby)){
+    setLED(0, 0, LEDbrightness);
+    aborted = false;
+  } else if (!digitalRead(ABORT) or aborted) {
+    setLED(LEDbrightness, 0, 0);
+    aborted = true;
+  } else {
+    setLED(0, LEDbrightness, 0);
   }
   
   /* Get input */
