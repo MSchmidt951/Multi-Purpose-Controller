@@ -107,7 +107,7 @@ void loop(){
       checkData(6, 0, "abort");
       checkData(6, 1, "standby");
       checkData(6, 2, "light");
-      checkData(6, 3, "left switch");
+      checkData(6, 4, "left switch");
       checkData(6, 5, "right switch");
       checkData(6, 6, "left joystick button");
       checkData(6, 7, "right joystick button");
