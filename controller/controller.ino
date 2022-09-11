@@ -76,9 +76,9 @@ void setup(){
   setLED(150, 0, 0);
   delay(1000);
   radio.begin();
-  radio.setPALevel(RF24_PA_MAX);
-  radio.setDataRate(RF24_1MBPS);
+  radio.setRadiation(RF24_PA_MAX, RF24_2MBPS);
   radio.setChannel(124);
+  radio.setPayloadSize(7);
 
   //Open pipe
   radio.openWritingPipe(addresses[0]);
